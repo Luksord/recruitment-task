@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.return {
+  display: none;
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.icon {
+  width: 45px;
+  height: 45px;
+  fill: black;
+}
+
+.title {
+  font-size: 24px;
+}

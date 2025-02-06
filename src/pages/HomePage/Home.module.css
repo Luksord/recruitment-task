@@ -14,7 +14,7 @@ body {
   width: 200px;
 }
 
-.counter-container {
+.counterContainer {
   display: flex;
   justify-content: space-between;
   width: 100%;
