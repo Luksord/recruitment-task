@@ -8,11 +8,33 @@
 }
 
 .usersList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+@media (max-width: 419px) {
+  .usersList {
+    width: calc((100%) / 1);
+  }
+}
+@media (max-width: 799px) {
+  .usersList {
+    width: calc((100%) / 2);
+  }
+}
+@media (min-width: 800px) {
+  .usersList {
+    width: calc((100%) / 3);
+  }
 }
 
 .userCard {
+  background-color: #ffff;
   display: flex;
   flex-direction: column;
+  width: 320px;
+  border-radius: 5px;
 }
 
 .infoContainer {
@@ -28,15 +50,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-top: solid 1px var(--background);
 }
 
 .avatar {
+  height: 75px;
+  width: auto;
   border-radius: 4px;
   overflow: hidden;
 }
 
 .gapControl {
-  gap: 6px;
+  gap: 12px;
 }
 
 .text {

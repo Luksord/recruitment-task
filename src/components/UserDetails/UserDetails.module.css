@@ -1,0 +1,71 @@
+.section {
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.container {
+}
+
+.userCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoContainer {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.btnContainer {
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.gapControl {
+  gap: 6px;
+}
+
+.text {
+  color: var(--text);
+  font-size: 18px;
+}
+
+.subtext {
+  color: var(--subtext);
+  font-size: 12px;
+}
+
+.flow {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+.badge {
+}
+
+.icon {
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+}
+
+.link {
+  color: var(--link);
+  font-size: 18px;
+}
