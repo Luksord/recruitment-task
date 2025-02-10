@@ -1,17 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import GitHubIcon from "../../assets/icons.svg";
-import css from "./UserList.module.css";
+import css from "./UsersList.module.css";
 import axios from "axios";
-
-// interface userProps {
-//   username: string;
-//   id: string;
-//   badge?: string;
-//   avatar: string;
-//   gitHubPage: string;
-//   detailsPage: string;
-// }
 
 export interface userProps {
   name: string;

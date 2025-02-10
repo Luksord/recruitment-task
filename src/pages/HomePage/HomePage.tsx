@@ -1,5 +1,5 @@
 import Header from "../../components/Header/Header";
-import UserList from "../../components/UserList/UserList";
+import UserList from "../../components/UserList/UsersList";
 
 export const HomePage = () => {
   return (
