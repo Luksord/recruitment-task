@@ -3,44 +3,45 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px;
-}
-
-.container {
+  padding: 30px;
+  max-width: 1130px;
 }
 
 .userCard {
+  background-color: var(--white);
   display: flex;
   flex-direction: column;
+  border-radius: 5px;
+  width: 420px;
+  padding: 20px;
+}
+
+.title {
+  font-size: 24px;
 }
 
 .infoContainer {
-  padding: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
   gap: 12px;
+  margin-bottom: 45px;
 }
 
-.btnContainer {
-  padding: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.positionControl {
+  position: relative;
+  width: 100%;
 }
 
 .avatar {
+  height: 120px;
+  width: auto;
   border-radius: 4px;
-  overflow: hidden;
-}
-
-.gapControl {
-  gap: 6px;
 }
 
 .text {
   color: var(--text);
   font-size: 18px;
+  margin-bottom: 6px;
 }
 
 .subtext {
@@ -49,14 +50,9 @@
 }
 
 .flow {
-  display: flex;
-  flex-direction: row;
-  position: relative;
+  position: absolute;
   bottom: 0;
   left: 0;
-}
-
-.badge {
 }
 
 .icon {
@@ -65,7 +61,12 @@
   margin-right: 6px;
 }
 
+.repoList {
+  color: var(--text);
+  list-style: disc;
+  padding-left: 15px;
+}
+
 .link {
-  color: var(--link);
-  font-size: 18px;
+  color: var(--text);
 }

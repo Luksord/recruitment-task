@@ -44,8 +44,9 @@ img {
 
 a {
   color: var(--link);
-  text-decoration: none;
+  font-size: 14px;
   font-family: sans-serif;
+  text-decoration: none;
 }
 
 p {

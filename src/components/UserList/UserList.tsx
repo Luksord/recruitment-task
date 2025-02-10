@@ -13,7 +13,8 @@ import axios from "axios";
 //   detailsPage: string;
 // }
 
-interface userProps {
+export interface userProps {
+  name: string;
   login: string;
   id: number;
   avatar_url: string;
@@ -56,7 +57,6 @@ function UserList() {
                 <div>
                   <p className={css.text}>@{login}</p>
                   <div style={{ display: "flex", flexDirection: "row" }}>
-                    {/* <p className={css.badge}>{badge}</p> */}
                     <p className={css.subtext}>ID: #{id}</p>
                   </div>
                 </div>
