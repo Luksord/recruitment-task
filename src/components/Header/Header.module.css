@@ -1,17 +1,24 @@
 .header {
   display: flex;
   justify-content: center;
-  align-items: center;
+  position: relative;
+  padding: 15px;
 }
 
 .return {
-  display: none;
-  text-decoration: none;
+  color: var(--link);
+  background-color: var(--white);
+  border: none;
+  position: absolute;
+  left: 20px;
+  top: 30px;
 }
 
 .wrapper {
   display: flex;
   flex-direction: row;
+  align-items: center;
+
   gap: 20px;
 }
 
@@ -23,4 +30,5 @@
 
 .title {
   font-size: 24px;
+  font-weight: 600;
 }

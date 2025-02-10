@@ -8,32 +8,31 @@
 }
 
 .usersList {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
+  width: 100%;
 }
-@media (max-width: 419px) {
+@media (min-width: 800px) {
   .usersList {
-    width: calc((100%) / 1);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (max-width: 799px) {
   .usersList {
-    width: calc((100%) / 2);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 800px) {
+@media (max-width: 426px) {
   .usersList {
-    width: calc((100%) / 3);
+    grid-template-columns: 1fr;
   }
 }
 
 .userCard {
-  background-color: #ffff;
+  background-color: var(--white);
   display: flex;
   flex-direction: column;
-  width: 320px;
   border-radius: 5px;
 }
 
@@ -41,8 +40,12 @@
   padding: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
   gap: 12px;
+}
+
+.positionControl {
+  position: relative;
+  width: 100%;
 }
 
 .btnContainer {
@@ -57,16 +60,12 @@
   height: 75px;
   width: auto;
   border-radius: 4px;
-  overflow: hidden;
-}
-
-.gapControl {
-  gap: 12px;
 }
 
 .text {
   color: var(--text);
   font-size: 18px;
+  margin-bottom: 6px;
 }
 
 .subtext {
@@ -75,14 +74,9 @@
 }
 
 .flow {
-  display: flex;
-  flex-direction: row;
-  position: relative;
+  position: absolute;
   bottom: 0;
   left: 0;
-}
-
-.badge {
 }
 
 .icon {
@@ -93,5 +87,6 @@
 
 .link {
   color: var(--link);
-  font-size: 18px;
+  font-size: 14px;
+  font-weight: 400;
 }

@@ -1,14 +1,14 @@
 import { Route, Routes } from "react-router-dom";
-// import { Home } from "./pages/HomePage/Home";
+import HomePage from "./pages/HomePage/HomePage";
 import DetailsPage from "./pages/DetailsPage/DetailsPage";
-import UserList from "./components/UserList/UserList";
+// import UserList from "./components/UserList/UserList";
 
 function App() {
   return (
     <main>
       <Routes>
-        <Route path="/" element={<UserList />} />
-        <Route path="/details" element={<DetailsPage />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/users/:login" element={<DetailsPage />} />
       </Routes>
     </main>
   );

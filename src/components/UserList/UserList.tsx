@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import GitHubIcon from "../../assets/icons.svg#icon-github.svg";
+import GitHubIcon from "../../assets/icons.svg";
 import css from "./UserList.module.css";
 import axios from "axios";
 
@@ -18,6 +18,7 @@ interface userProps {
   id: number;
   avatar_url: string;
   html_url: string;
+  repos_url: string;
 }
 
 function UserList() {
@@ -51,8 +52,8 @@ function UserList() {
           <li key={index} className={css.userCard}>
             <div className={css.infoContainer}>
               <img src={avatar_url} className={css.avatar} />
-              <div>
-                <div className={css.gapControl}>
+              <div className={css.positionControl}>
+                <div>
                   <p className={css.text}>@{login}</p>
                   <div style={{ display: "flex", flexDirection: "row" }}>
                     {/* <p className={css.badge}>{badge}</p> */}
