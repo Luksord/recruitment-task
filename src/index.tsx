@@ -9,16 +9,6 @@ import App from "./App";
 import "./global.css";
 import { store } from "./store";
 
-// const App = () => {
-//   return (
-//     <Provider store={store}>
-//       <Home />
-//     </Provider>
-//   );
-// };
-
-// ReactDOM.render(<App />, document.getElementById("root"));
-
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <Provider store={store}>
     <BrowserRouter>
