@@ -1,11 +1,11 @@
 import Header from "../../components/Header/Header";
-import UserList from "../../components/UserList/UsersList";
+import UsersList from "../../components/UsersList/UsersList";
 
 export const HomePage = () => {
   return (
     <div>
       <Header />
-      <UserList />
+      <UsersList />
     </div>
   );
 };

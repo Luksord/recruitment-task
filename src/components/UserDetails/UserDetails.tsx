@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import GitHubIcon from "../../assets/icons.svg";
 import css from "./UserDetails.module.css";
-import { userProps } from "../UserList/UsersList";
+import { userProps } from "../UsersList/UsersList";
 
 interface Repository {
   id: number;
