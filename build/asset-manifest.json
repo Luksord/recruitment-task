@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/recruitment-task/static/css/main.48c6748b.css",
+    "main.js": "/recruitment-task/static/js/main.cb5adde3.js",
+    "static/media/icons.svg": "/recruitment-task/static/media/icons.47d585a2c86e98b67889189a061a521b.svg",
+    "index.html": "/recruitment-task/index.html",
+    "main.48c6748b.css.map": "/recruitment-task/static/css/main.48c6748b.css.map",
+    "main.cb5adde3.js.map": "/recruitment-task/static/js/main.cb5adde3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.48c6748b.css",
+    "static/js/main.cb5adde3.js"
+  ]
+}
